@@ -88,7 +88,7 @@ namespace Match_Multiple_Strings_inside_Multiple_Files
 
                 if (finalKeyValuePairs != null && finalKeyValuePairs.Count > 0)
                 {
-                    using (ExcelPackage excelPackage = new ExcelPackage(new FileInfo(fileName)))
+                    using (ExcelPackage excelPackage = new ExcelPackage(new FileInfo(resultPath)))
                     {
                         foreach (ExcelWorksheet worksheet in excelPackage.Workbook.Worksheets)
                         {
